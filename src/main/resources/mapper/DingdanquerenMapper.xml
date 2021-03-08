@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.spring.dao.DingdanquerenMapper">
+    <resultMap id="BaseResultMap" type="com.spring.entity.Dingdanqueren">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+                            <result column="dingdanbianhao" property="dingdanbianhao" jdbcType="VARCHAR"/>
+                                    <result column="wupinbianhao" property="wupinbianhao" jdbcType="VARCHAR"/>
+                                    <result column="wupinmingcheng" property="wupinmingcheng" jdbcType="VARCHAR"/>
+                                    <result column="wupintupian" property="wupintupian" jdbcType="VARCHAR"/>
+                                    <result column="wupinjiage" property="wupinjiage" jdbcType="DECIMAL"/>
+                                    <result column="maijia" property="maijia" jdbcType="VARCHAR"/>
+                                    <result column="xingming" property="xingming" jdbcType="VARCHAR"/>
+                                    <result column="xiadanren" property="xiadanren" jdbcType="VARCHAR"/>
+                                    <result column="querenzhuangtai" property="querenzhuangtai" jdbcType="VARCHAR"/>
+                                    <result column="beizhu" property="beizhu" jdbcType="VARCHAR"/>
+                                    <result column="querenren" property="querenren" jdbcType="VARCHAR"/>
+                                                    <result column="wupindingdanid" property="wupindingdanid" jdbcType="INTEGER"/>
+                <result column="addtime" property="addtime" jdbcType="VARCHAR"/>
+            </resultMap>
+    <sql id="Base_Column_List">
+        id, dingdanbianhao, wupinbianhao, wupinmingcheng, wupintupian, wupinjiage, maijia, xingming, xiadanren, querenzhuangtai, beizhu, querenren, wupindingdanid, addtime    </sql>
+    </mapper>
